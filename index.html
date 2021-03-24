@@ -1,0 +1,607 @@
+<html lang="en" class="wf-futurapt-n5-active wf-futurapt-n7-active wf-futurapt-n4-active wf-active"><head>
+<meta charset="UTF-8">
+<title>Highrise | a new synthetic asset.</title>
+<meta name="description" content="Highrise | a new synthetic asset.">
+<meta name="keywords" content="Highrise, synthetic, asset, token, BEP20">
+<meta property="og:title" content="Highrise | a new synthetic asset.">
+<meta property="og:description" content="Highrise (HIRI) is a rebasing token that attempts to achieve a non-collaterized price peg to Crypto Assets by contracting and expanding supply evenly across all balances.">
+<meta property="og:url" content="https://highriseapp.org">
+<meta content="https://highriseapp.org/logo.png" property="og:image">
+<link rel="icon" href="images/favicon.png">
+<script src="https://use.typekit.net/tzp0xpt.js"></script>
+<style type="text/css">.tk-futura-pt{font-family:"futura-pt",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-futura-pt-n5;src:url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opHighrisepe");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:tk-futura-pt-n7;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opHighrisepe");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:tk-futura-pt-n4;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opHighrisepe");font-weight:400;font-style:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="dist/bundle.js"></script><style type="text/css">.container, main {
+  position: relative; }
+
+ol, ul {
+  list-style: none; }
+
+.img-wrap, .landing__mask {
+  overflow: hidden; }
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: futura-pt; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-size: 65px;
+  font-weight: 500; }
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500; }
+
+h3,
+p {
+  font-size: 35px;
+  font-weight: 300; }
+
+.about p {
+  font-size: 35px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 1.6; }
+
+::-moz-selection {
+  background: #4c00ec;
+  color: #fff; }
+
+::selection {
+  background: #4c00ec;
+  color: #fff; }
+
+/*
+===================================
+    MEDIA QUERIES
+===================================
+*/
+@media (max-width: 960px) {
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500; }
+  h3,
+  p {
+    font-size: 35px;
+    font-weight: 300; }
+  .about p {
+    font-size: 30px; } }
+
+@media (max-width: 760px) {
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 500; }
+  h3,
+  p {
+    font-size: 25px;
+    font-weight: 300; }
+  .about p {
+    font-size: 22px;
+    font-weight: 300; } }
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    text-align: center;
+    font-size: 30px; }
+  h3,
+  p {
+    font-size: 22px;
+    font-weight: 300; } }
+
+* {
+  box-sizing: border-box; }
+
+.hov { cursor: pointer; }
+
+
+body,
+html,
+.landing {
+  min-height: 100%; }
+
+body.no-scroll {
+  overflow: hidden; }
+
+.container {
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 5; }
+
+ul {
+  padding-left: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+/*
+===================================
+    MEDIA QUERIES
+===================================
+*/
+@media (max-width: 960px) {
+  main {
+    margin-bottom: 300px; } }
+
+@media (max-width: 760px) {
+  .center {
+    position: static;
+    -webkit-transform: none;
+    transform: none; }
+  main {
+    margin-bottom: 200px; } }
+
+@media (max-width: 480px) {
+  main {
+    margin-bottom: 200px; } }
+
+@-webkit-keyframes reveal-up {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@keyframes reveal-up {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@-webkit-keyframes reveal-down {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@keyframes reveal-down {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@-webkit-keyframes loading-mask {
+  0%, 100% {
+    -webkit-transform: translateX(-50%) scaleX(0); }
+  30%, 70% {
+    -webkit-transform: translateX(-50%) scaleX(1); } }
+
+@keyframes loading-mask {
+  0%, 100% {
+    -webkit-transform: translateX(-50%) scaleX(0);
+    transform: translateX(-50%) scaleX(0); }
+  30%, 70% {
+    -webkit-transform: translateX(-50%) scaleX(1);
+    transform: translateX(-50%) scaleX(1); } }
+
+@-webkit-keyframes show-on-load {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes show-on-load {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.landing {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px; }
+  .landing__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .landing__mask h1 {
+    opacity: 0;
+    -webkit-animation: reveal-up .4s .8s forwards;
+    animation: reveal-up .4s .8s forwards; }
+  .landing__mask p {
+    padding-top: 5px;
+    opacity: 0;
+    -webkit-animation: reveal-down .4s .8s forwards;
+    animation: reveal-down .4s .8s forwards;
+    text-align: center; }
+  .landing__mask.top-mask {
+    position: relative; }
+  .landing__mask.top-mask:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 850px;
+    background-color: #0000ff;
+    -webkit-animation: loading-mask 1.2s 0.2s both;
+    animation: loading-mask 1.2s 0.2s both; }
+
+.landing__menu {
+  margin: 0; }
+  .landing__menu li {
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    font-size: 26px;
+    -webkit-animation: show-on-load .5s 1.7s forwards;
+    animation: show-on-load .5s 1.7s forwards;
+    /*
+        Could possible lose the code below if I change the hover effect
+        */ }
+    .landing__menu li a {
+      position: relative;
+      display: block; }
+      .landing__menu li a:before, .landing__menu li a:after {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        top: 50%;
+        margin-top: -0.5px;
+        background: #000; }
+      .landing__menu li a:before {
+        left: -2.5px; }
+      .landing__menu li a:after {
+        right: 2.5px;
+        background: #000;
+        transition: width 0.35s cubic-bezier(0.22, 0.61 0.36, 1); }
+      .landing__menu li a:hover {
+        color: #231cc7; }
+    .landing__menu li:first-child {
+      top: 30px;
+      left: 30px;
+      font-size: 28px;
+      -webkit-animation: show-on-load .5s 1.7s forwards;
+      animation: show-on-load .5s 1.7s forwards; }
+    .landing__menu li:nth-child(2) {
+      top: 30px;
+      right: 30px;
+      -webkit-animation: show-on-load .5s 2.1s forwards;
+      animation: show-on-load .5s 2.1s forwards; }
+    .landing__menu li:nth-child(3) {
+      bottom: 30px;
+      right: 30px;
+      -webkit-animation: show-on-load .5s 2.9s forwards;
+      animation: show-on-load .5s 2.9s forwards; }
+    .landing__menu li:nth-child(4) {
+      bottom: 30px;
+      left: 30px;
+      -webkit-animation: show-on-load .5s 2.5s forwards;
+      animation: show-on-load .5s 2.5s forwards; }
+
+.particle-container {
+  min-height: 100%; }
+
+/*
+===================================
+    MEDIA QUERIES
+===================================
+*/
+@media (max-width: 760px) {
+  .landing__title {
+    width: 275px; }
+  .landing__menu li,
+  .landing__menu li:first-child {
+    font-size: 22px; } }
+
+@media (max-width: 480px) {
+  .landing {
+    position: relative;
+    height: 90vh;
+    background-color: #fff; }
+    .landing__menu {
+      display: none; }
+    .landing__title {
+      width: 210px; }
+    .landing__mask.top-mask:after {
+      height: 2px; } }
+
+.about {
+  visibility: hidden;
+  position: relative;
+  min-height: 90vh;
+  width: 100%;
+  background-color: #0000ff;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s; }
+  .about p {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    color: #fff;
+    font-weight: 300;
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+    -webkit-transition: opacity .5s .2s,transform .5s .2s;
+    transition: opacity .5s .2s, transform .5s .2s; }
+  .about.visible {
+    visibility: visible; }
+  .about.show-text p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+
+/*
+=============================
+    MEDIA QUERIES
+=============================
+*/
+@media (max-width: 760px) {
+  .about {
+    min-height: auto;
+    height: auto; }
+    .about p {
+      padding: 50px 20px; } }
+
+@media (max-width: 480px) {
+  .about {
+    background-color: #231cc7; } }
+
+.work {
+  position: relative;
+  margin-bottom: 450px;
+  padding: 100px 0;
+  background-color: #fff; }
+  .work li:hover {
+    background-color: #0000ff;
+    color: #fff; }
+  .work h2,
+  .work h3 {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto; }
+  .work h2 {
+    padding: 17px 30px;
+    max-width: 1000px;
+    text-align: left; }
+  .work h3 {
+    position: relative;
+    padding: 25px 30px;
+    max-width: 1000px;
+    cursor: pointer; }
+
+/*
+===================================
+    MEDIA QUERIES
+===================================
+*/
+@media (max-width: 960px) {
+  .work {
+    margin-bottom: 350px;
+    padding: 60px 0; } }
+
+@media (max-width: 760px) {
+  .work {
+    margin-bottom: 205px;
+    padding: 40px 0; }
+    .work h2,
+    .work h3 {
+      padding: 15px 20px; }
+    .work h3:before,
+    .work h3:after {
+      display: none; } }
+
+@media (max-width: 480px) {
+  .work {
+    margin-bottom: 205px; } }
+
+.contact {
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: #0000ff; }
+  .contact .contact-wrap {
+    position: relative;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 100px 30px; }
+  .contact.visible {
+    visibility: visible; }
+  .contact h2,
+  .contact p {
+    padding: 0 10px 20px;
+    text-align: left;
+    color: #fff; }
+  .contact h2 {
+    padding: 0 10px 20px; }
+  .contact svg {
+    display: inline-block;
+    width: 35px;
+    margin: 20px 10px 20px 10px;
+    fill: #fff; }
+  .contact .phone {
+    padding-bottom: 0; }
+  .contact .photo {
+    position: absolute;
+    right: 125px;
+    bottom: 0;
+    width: 300px; }
+
+/*
+=============================
+    MEDIA QUERIES
+=============================
+*/
+@media (max-width: 960px) {
+  .contact .contact-wrap {
+    padding: 100px 10px; } }
+
+@media (max-width: 860px) {
+  .photo {
+    display: none; } }
+
+@media (max-width: 760px) {
+  .contact .contact-wrap {
+    padding: 50px 20px; }
+    .contact .contact-wrap h2,
+    .contact .contact-wrap p {
+      padding: 0 0 15px; }
+    .contact .contact-wrap .phone {
+      padding-bottom: 0; } }
+
+@media (max-width: 480px) {
+  .contact {
+    visibility: visible; } }
+</style><style type="text/css">@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opHighrisepe");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opHighrisepe");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opHighrisepe");font-weight:400;font-style:normal;font-display:auto;}</style>
+</head>
+<body>
+<div class="particle-container" id="particles"></div>
+<section class="landing" id="landing">
+<nav class="landing__menu">
+<li><a class="hov" onClick="alert('CoinGecko listing is coming after our Presale!);">CoinGecko</a></li>
+<li><a class="hov" id="cd" onClick="alert('PancakeSwap listing is coming very soon!');">Trade</a></li>
+<li><a class="hov" onClick="alert('Coming');">Contract</a></li>
+<li><a class="smooth-scroll hov" data-speed="1000" data-easing="easeInOutCubic" id="menu-contact" href="bounce">ICO</a></li>
+</nav>
+<div class="landing__title">
+<div class="landing__mask top-mask">
+<h1>Highrise</h1>
+</div>
+<div class="landing__mask">
+<p class="hov" style="line-height: normal;"><a onClick="alert('Whitepaper coming soon!');" style="text-decoration: underline;">Revolutionary synthetic Asset.</a></p>
+</div>
+</div>
+</section>
+<section class="about visible" id="about">
+<div class="center">
+<p>Highrise (Highrise) is an elastic supply asset that aims to explore the effects of a new kind
+of price peg, one that is achieved by distributing supply delta pro-rata over all
+balances.</p>
+
+<p>this is achieved by maintaining the P*S constant, adjusting supply accordingly based on a target price.</p>
+
+</div>
+</section>
+<section class="work" id="work">
+<h2>Apps</h2>
+<ul>
+<li>
+<h3>$HIRI's liquidity mining program.</h3>
+</a>
+</li>
+<li>
+<h3>YIELD - A fresh yield farming suite that includes $HIRI.</h3>
+</a>
+</li>
+<li id="bottom">
+<h3>Tokenburn - $HIRI will burn 3-5% of every transaction made.</h3>
+</a>
+</li>
+</ul>
+</section>
+<footer class="contact" id="contact">
+<div class="contact-wrap">
+<h2>Community</h2>
+<p><a href="mailto:team@highriseapp.org">team@highriseapp.org</a> </p>
+<div class="contact__icons" style="margin-top:-2%; margin-bottom:0%;">
+
+<a href="https://t.me/officialHighrise" target="_blank" rel="noopener" class="telegram-share"><i><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"></path></svg></i></a>
+<a href="https://t.me/officialHighriseNews" target="_blank" rel="noopener" class="telegram-share"><i><svg width="24px" height="24px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 1.41421;"><path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"></path></svg></i></a>
+<a href="https://twitter.com/HighriseFinance" target="_blank" rel="noopener" class="twitter-share"><i><svg viewBox="0 0 512 436"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"></path></svg></i></a>
+</div>
+<div style="margin-top:2%; margin-bottom:-4%; margin-left:1%;">
+<small style="color:#ccc;">The information provided on this website does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website's content as such. The Highrise team does not recommend that any cryptocurrency should be bought, sold, or held by you. Do conduct your own due diligence. By purchasing Highrise , you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token "as is" and is not legally required to provide any support or services. You should have no expectation of any form from Highrise and its team. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.</small>
+</div>
+</div>
+</footer>
+
+<script>
+let cd = document.getElementById("cd");
+
+var countDownDate = new Date("Apr 5, 2021 16:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  cd.innerHTML = "Launch in "+ days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    cd.innerHTML = "LAUNCHED";
+  }
+}, 1000);
+
+</script>
+
+
+</body></html>
