@@ -7,10 +7,10 @@
 <meta property="og:description" content="Highrise (HIRI) is a rebasing token that attempts to achieve a non-collaterized price peg to Crypto Assets by contracting and expanding supply evenly across all balances.">
 <meta property="og:url" content="https://highriseapp.org">
 <meta content="https://highriseapp.org/logo.png" property="og:image">
-<link rel="icon" href="images/favicon.png">
+<link rel="icon" href="favicon.png">
 <script src="https://use.typekit.net/tzp0xpt.js"></script>
 <style type="text/css">.tk-futura-pt{font-family:"futura-pt",sans-serif;}</style><style type="text/css">@font-face{font-family:tk-futura-pt-n5;src:url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n5&v=3) format("opHighrisepe");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:tk-futura-pt-n7;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opHighrisepe");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:tk-futura-pt-n4;src:url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opHighrisepe");font-weight:400;font-style:normal;font-display:auto;}</style><script>try{Typekit.load({ async: true });}catch(e){}</script>
-<script src="dist/bundle.js"></script><style type="text/css">.container, main {
+<script src="bundle.js"></script><style type="text/css">.container, main {
   position: relative; }
 
 ol, ul {
@@ -203,7 +203,7 @@ img {
     opacity: 1;
     -webkit-transform: translateY(0); } }
 
-@keyframes reveal-down {
+@keyframes reveal-down { 
   0% {
     opacity: 1;
     -webkit-transform: translateY(-100%);
